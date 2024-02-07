@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+#frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: hsl(218, 23%, 16%);
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40%;
+    min-height: 45%;
+    height: fit-content;
+    border-radius: 10px;
+    background: hsl(217, 19%, 24%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dice-button {
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+    aspect-ratio: 1/1;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+#dice-button:hover {
+    box-shadow: 0 0 30px 5px hsl(150, 100%, 66%);
+}
+
+#dice {
+    fill: hsl(218, 23%, 16%);
+    width: 40%;
+}
+
+#advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 11px;
+}
+#advice-content {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+#advice-id {
+    margin-top: 5%;
+}
+
+#advice-content, #bar {
+    width: 90%;
+    margin: 0 auto;
+}
+#advice-content {
+    margin-top: 10px;
+}
+#bar {
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 850px) {
+    #main {
+        width: 90%;
+    }
+    #bar {
+        margin-top: 15px;
+        margin-bottom: 10%;
+    }
+    #dice-button {
+        width: 15%;
+    }
+}
